@@ -77,12 +77,17 @@ li{
 
 
 /* Navigation */
+.nav img{
+	position: absolute;
+	top: 10px;
+	left: 50px;
+}
 header{
 	background-color: #ffcd00;
 }
 
 .nav ul {
-	padding: 40px 10px 15px 0;
+	padding: 106px 10px 15px 0;
 	margin:0;
 	text-align: right;
 }
