@@ -1,0 +1,490 @@
+/*
+color scheme
+
+dark grey: #3d454f;
+yellow: #ffcd00;
+turquois: #00c4cd;
+white: #fff;
+
+Max-width 850px
+*/
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+html, body{
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 13pt;
+	color: #3d454f;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover{
+	color: #3d454f;
+}
+
+hr{
+	clear: right;
+	display: block;
+	border-top: 3px solid #ffcd00;
+	margin: 0;
+}
+
+h1{
+	font-size: 34pt;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #00c4cd;
+}
+
+h2{
+	margin-top: 0px;
+	font-size: 26pt;
+}
+
+h3{
+	font-family: 'Amatic SC', cursive;
+	font-size: 34pt;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.main{
+	background-color: #fff;
+	margin: 0 auto -157px auto;
+	min-height: 100vh;
+}
+
+.wrapper{
+	margin: 0 auto;
+	max-width: 850px;
+	padding: 0 30px;
+}
+
+
+/* Navigation */
+header{
+	background-color: #ffcd00;
+}
+
+.nav ul {
+	padding: 40px 10px 15px 0;
+	margin:0;
+	text-align: right;
+}
+
+.nav ul li{
+	text-transform: uppercase;
+	list-style-type: none;
+	display: inline;
+	padding: 0 10px;
+}
+	/* Home nav */
+	#home-nav{
+		background-color: #fff;
+	}
+
+	#home-nav .nav ul li a{
+		color: #3d454f;
+	}
+
+	#home-nav .nav ul li a:hover{
+		color: #ffcd00;
+	}
+
+	#home-line{
+		border-top: 3px solid #00c4cd;
+	}
+
+/* Footer */
+footer{
+	text-align: center;
+	font-weight: 300;
+	background-color: #ffcd00;
+	width: 100%;
+	color: #fff;
+	padding: 40px 0;
+}
+
+.sm-icons{
+	margin-bottom:20px;
+}
+
+.icons{
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin:0 15px 20px 15px;
+}
+
+footer, .push{
+	height: 157px;
+}
+
+.footer-line, .w-footer-line{
+	border-top: 1px solid #fff;
+	width: 67%;
+	margin: 0 auto 40px auto;
+}
+
+/* Free Social Media Icons made by Christophe Kerebel 
+https://dribbble.com/shots/2247532-Freebies-Social-flat-icons-set */
+#link-square1{
+	background-image: url('../media/fb-fill.png');
+}
+
+#link-square1:hover{
+	background-image: url('../media/fb-fill-h.png');
+}
+
+#link-square2{
+	background-image: url('../media/tw-fill.png');
+}
+
+#link-square2:hover{
+	background-image: url('../media/tw-fill-h.png');
+}
+
+#link-square3{
+	background-image: url('../media/ins-fill.png');
+}
+
+#link-square3:hover{
+	background-image: url('../media/ins-fill-h.png');
+}
+
+
+	/* Home white footer */
+	.w-footer-line{
+		border-top: 1px solid #3d454f;
+	}
+
+	#w-link-square1{
+		background-image: url('../media/fb-outline.png');
+	}
+
+	#w-link-square1:hover{
+		background-image: url('../media/fb-outline-h.png');
+	}
+
+	#w-link-square2{
+		background-image: url('../media/tw-outline.png');
+	}
+
+	#w-link-square2:hover{
+		background-image: url('../media/tw-outline-h.png');
+	}
+
+	#w-link-square3{
+		background-image: url('../media/ins-outline.png');
+	}
+
+	#w-link-square3:hover{
+		background-image: url('../media/ins-outline-h.png');
+	}
+
+	.w-footer{
+		color: #3d454f;
+		background-color: #fff;
+	}
+
+/* 	Home */
+.intro{
+	position: absolute;
+	left: 50%;
+	font-size: 20pt;
+	padding: 0 30px;
+	font-weight: 300;
+}
+
+h5{
+	font-family: 'Amatic SC', cursive;
+	font-size: 75pt;
+	margin-bottom: 20px;
+	color:#3d454f;
+}
+
+.intro a {
+	background-color: #ffcd00;
+	padding: 5px 25px;
+	border-radius: 5px;
+}
+
+#home-main{
+	background-color: #00c4cd;
+	position: relative;
+}
+
+#home-main .push{
+	height: 40px;
+}
+
+.banner-slides{
+	width: 100%;
+	background-color: #fff;
+}
+
+.home-body{
+	padding-top: 40px;
+}
+
+.home-body p{
+	padding: 10px 0;
+	color: #fff;
+	font-weight: 300;
+	margin: 0 auto;
+	max-width: 850px;
+}
+
+#plane{
+	position: absolute;
+	top: 35%;
+	max-width: 400px;
+}
+/* Boxes for Home and Activities */
+.box{
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+    -webkit-flex-flow: row wrap;
+  	justify-content: space-between;
+  	margin: 0 auto;
+  	max-width: 850px;
+  	clear: left;
+}
+
+.box div{
+    width: 220px;
+    height: 180px;
+    background-color: #3d454f;
+    position: relative;
+    margin: 0 5px 50px 5px;
+}
+
+.box div a, #spe-box div p {
+	background-color: #fff;
+	text-transform: uppercase;
+	position: absolute;
+	padding: 5px 20px;
+	top: 110px;
+	color: #3d454f;
+}
+
+.box div a:hover{
+	color: #ffcd00;
+}
+
+
+/* Activities */
+#act-box{
+	margin:7% auto 4% auto;
+	max-width: 850px;
+}
+
+#act-box div{
+	font-family: 'Amatic SC', cursive;
+	font-size:25pt;
+	position: relative;
+}
+
+#act-box div p{
+	margin-left: 10px;
+	padding-top: 135px;
+	margin-bottom: -42px;
+	opacity: 1;
+	-webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+#brazil, #egypt, #uk, #italy, #japan, #usa{
+	padding: 80px 0;
+}
+
+#brazil, #japan{
+	background-color: #00c4cd;
+}
+
+#egypt, #italy, #usa{
+	background-color: #fff;
+}
+
+#uk{
+	background-color: #ffcd00;
+}
+
+span{
+	font-family: 'Amatic SC', cursive;
+	color: #fff;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+#act-box a:hover span{
+	opacity: 1;
+}
+
+#act-box a:hover div p{
+	opacity: 0;
+}
+
+#br-img{
+	background-image: url('../media/br.png');
+}
+
+#eg-img{
+	background-image: url('../media/eg.png');
+}
+
+#uk-img{
+	background-image: url('../media/uk.png');
+}
+
+#it-img{
+	background-image: url('../media/it.png');
+}
+
+#jp-img{
+	background-image: url('../media/jp.png');
+}
+
+#usa-img{
+	background-image: url('../media/usa.png');
+}
+
+
+.images{
+	float: left;
+}
+
+.images-right{
+	float: right;
+}
+
+.descriptions{
+	width: 55%;
+	float: right;
+}
+
+.descriptions-right{
+	width: 50%;
+}
+
+.descriptions, .descriptions-right{
+	font-weight: 300;
+	line-height: 25px;
+}
+
+.price{
+	padding-top: 20px;
+	clear: left;
+}
+
+.price-right{
+	clear: right;
+}
+
+.price-right h2{
+	padding-top: 30px;
+}
+
+table{
+	margin-top: 20px;
+	width: 100%;
+	border: 1px solid #3d454f;
+}
+
+th{
+	width: 50%;
+	padding: 8px;
+	border-bottom: 1px solid #3d454f;
+}
+
+th.last{
+	border-bottom: none;
+}
+
+th.right{
+	border-left: 1px solid #3d454f;
+}
+
+/* Food and Drinks */
+
+strong{
+	padding-left: 50px;
+	color: #ffcd00;
+}
+
+.menu li {
+	font-weight: 700;
+	list-style-type: none;
+	margin-left: -20px;
+}
+
+.menu li p{
+	font-weight: 300;
+}
+
+.food-icons{
+	margin-left: 10px;
+}
+
+/* Specials */
+
+#passport h1{
+	display: block;
+}
+
+#passport img{
+	float: left;
+}
+
+#passport p{
+	float: left;
+	width: 60%;
+	margin: 0 30px;
+}
+
+#packages{
+	clear: left;
+}
+
+#spe-box div p{
+	background-color: #ffcd00;
+	color: #3d454f;
+}
+
+h6{
+	text-transform: uppercase;
+	margin: 10px 5px;
+	font-size: 16pt;
+}
+
+#spe-box div{
+	margin-bottom: 0;
+}
+
+section{
+	margin-bottom: 20px;
+}
