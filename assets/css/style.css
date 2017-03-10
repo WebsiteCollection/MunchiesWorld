@@ -59,6 +59,10 @@ h3{
 	margin-bottom: 20px;
 }
 
+li{
+	list-style-type: none;
+}
+
 .main{
 	background-color: #fff;
 	margin: 0 auto -157px auto;
@@ -85,7 +89,6 @@ header{
 
 .nav ul li{
 	text-transform: uppercase;
-	list-style-type: none;
 	display: inline;
 	padding: 0 10px;
 }
@@ -477,7 +480,7 @@ strong{
 
 h6{
 	text-transform: uppercase;
-	margin: 10px 5px;
+	margin: 10px 6px;
 	font-size: 16pt;
 }
 
@@ -487,4 +490,8 @@ h6{
 
 section{
 	margin-bottom: 20px;
+}
+
+section ul{
+	padding-left: 8px;
 }
