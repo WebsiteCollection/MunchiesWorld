@@ -283,7 +283,7 @@ h5{
     margin: 0 5px 50px 5px;
 }
 
-.box div a, #spe-box div p {
+.box div a, .spe-box div p {
 	background-color: #fff;
 	text-transform: uppercase;
 	position: absolute;
@@ -478,7 +478,7 @@ strong{
 	clear: left;
 }
 
-#spe-box div p{
+.spe-box div p{
 	background-color: #ffcd00;
 	color: #3d454f;
 }
@@ -489,7 +489,7 @@ h6{
 	font-size: 16pt;
 }
 
-#spe-box div{
+.spe-box div{
 	margin-bottom: 0;
 }
 
@@ -499,4 +499,9 @@ section{
 
 section ul{
 	padding-left: 8px;
+}
+
+.restrictions{
+	font-size: 12pt;
+	font-weight: 300;
 }
