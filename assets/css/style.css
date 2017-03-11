@@ -44,6 +44,7 @@ h1{
 	text-transform: uppercase;
 	display: inline-block;
 	color: #00c4cd;
+	margin-bottom: 5px;
 }
 
 h2{
@@ -525,9 +526,9 @@ section ul{
 #store-info .icons{
 	margin: 5px 0;
 }
+
 .side-nav-h2{
     font-size: 18pt;
-    font-weight: bold;
     text-transform: uppercase;
     color: #00c4cd;
 }
@@ -538,4 +539,37 @@ section ul{
 
 .days{
 	padding: 4px 0;
+}
+
+#map{
+	width: 270px;
+	height: 200px;
+	background-color: black;
+}
+
+#contact-left{
+	max-width: 60%;
+}
+
+#contact-left h3{
+	color: #00c4cd;
+	text-align: left;
+	margin: 0;
+}
+#contact-left .links, .contact-sm-icons a:hover{
+	color: #00c4cd;
+}
+
+#contact-left .links:hover,{
+	color: #ffcd00;
+}
+
+.contact-sm-icons a{
+	color: #3d454f;
+}
+
+
+.contact-sm-icons img{
+	vertical-align: middle;
+	padding: 5px 10px 5px 0px;
 }
