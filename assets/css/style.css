@@ -46,7 +46,7 @@ h1{
 }
 
 h2{
-	margin-top: 0px;
+	margin: 0px;
 	font-size: 26pt;
 }
 
@@ -75,13 +75,13 @@ li{
 	padding: 0 30px;
 }
 
-
 /* Navigation */
 .nav img{
 	position: absolute;
 	top: 10px;
 	left: 50px;
 }
+
 header{
 	background-color: #ffcd00;
 }
@@ -97,6 +97,7 @@ header{
 	display: inline;
 	padding: 0 10px;
 }
+
 	/* Home nav */
 	#home-nav{
 		background-color: #fff;
@@ -384,10 +385,12 @@ span{
 
 .images{
 	float: left;
+	background-color: #3d454f;
 }
 
 .images-right{
 	float: right;
+	background-color: #3d454f;
 }
 
 .descriptions{
@@ -417,6 +420,10 @@ span{
 	padding-top: 30px;
 }
 
+#age-limit{
+	padding-left: 0;
+	color:#3d454f;
+}
 table{
 	margin-top: 20px;
 	width: 100%;
@@ -501,7 +508,7 @@ section ul{
 	padding-left: 8px;
 }
 
-.restrictions{
+.details{
 	font-size: 12pt;
 	font-weight: 300;
 }
