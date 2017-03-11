@@ -1,8 +1,14 @@
 function myMap() {
-var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.12),
+  var myLatLng = {lat: 36.04, lng: -115.25};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 16,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-}
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Munchies World'
+  });
 }
