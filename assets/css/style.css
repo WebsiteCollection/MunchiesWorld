@@ -14,6 +14,7 @@ Max-width 850px
 html, body{
 	height: 100%;
 	margin: 0;
+	min-width: 1025px;
 }
 
 body{
@@ -511,4 +512,30 @@ section ul{
 .details{
 	font-size: 12pt;
 	font-weight: 300;
+}
+
+/* Contact */
+#store-info{
+	display: block;
+	margin-top: 40px;
+	float: right;
+	max-width: 35%;
+}
+
+#store-info .icons{
+	margin: 5px 0;
+}
+.side-nav-h2{
+    font-size: 18pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00c4cd;
+}
+
+#store-info ul{
+	padding-left: 5px;
+}
+
+.days{
+	padding: 4px 0;
 }
