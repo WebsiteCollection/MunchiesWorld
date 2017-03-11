@@ -72,7 +72,7 @@ hr{
 }
 
 h1{
-	font-size: 34pt;
+	font-size: 38pt;
 	text-transform: uppercase;
 	display: inline-block;
 	color: #00c4cd;
@@ -575,6 +575,145 @@ section ul{
 /* -----------------------
     8. RESERVATION PAGE
 -------------------------*/
+.cld-main{
+  	width: 100%;
+  	margin-top: 20px;
+}
+
+.cld-main a{
+  	color: #00c4cd;
+}
+
+.cld-main svg{
+  	fill: #fff;
+}
+
+.cld-datetime{
+    position: relative;
+    width: initial;
+    margin: auto;
+    overflow: hidden;
+    padding: 40px;
+    background-color: #00c4cd;
+}
+
+.cld-datetime .today{
+    position: relative;
+    float: left;
+    width: calc(100% - 40px);
+    margin: auto;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 24pt;
+}
+
+.cld-nav{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.cld-nav:hover{
+    cursor: pointer;
+}
+
+.cld-nav:hover svg{
+    fill: #3d454f;
+}
+
+.cld-rwd{
+    float: left;
+}
+
+.cld-fwd{
+    float: right;
+}
+
+.cld-nav svg:hover{
+
+}
+
+.cld-labels, .cld-days{
+  	padding-left: 0;
+}
+ 
+.cld-label, .cld-day{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 14.28%;
+    text-align: center;
+}
+
+.cld-day{
+    border: 1px solid #eee;
+}
+
+.cld-day.today .cld-number{
+    background: #ffcd00;
+    color: #fff;
+}
+
+.cld-day.today .cld-number:hover{
+    background: #3d454f;
+}
+
+.cld-day.disableDay{
+    opacity: 0.5;
+}
+
+.cld-day.nextMonth, .cld-day.prevMonth{
+    opacity: 0.33;
+}
+
+.cld-number{
+    position: relative;
+    margin: 0;
+    padding: 30px 0;
+}
+.cld-title{
+    position: absolute;
+    z-index: 5;
+    display: none;
+    top: 35px;
+    left: 0;
+	padding: 5px 10px;
+	background: #fff;
+	white-space: nowrap;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+.cld-number:hover .cld-title{
+	display: block;
+}
+
+.cld-title::before{
+	content: '';
+	position: absolute;
+	top: -7.5px; left: 10px;
+    width: 0;
+	height: 0;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+    border-bottom: 7.5px solid #ccc;
+}
+
+.cld-number.eventday{
+    font-weight: bold;
+    color: #0080FF;
+}
+
+.cld-number.eventday:hover{
+    cursor: pointer;
+    background: #eee;
+}
+
+.today .cld-number.eventday:hover{
+    background: #005EFF;
+}
 
 /* -----------------------
     9. CONTACT PAGE
@@ -598,7 +737,7 @@ section ul{
 }
 
 #contact_form{
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 #contact_form label{
@@ -630,6 +769,7 @@ section ul{
 
 .row{
 	display: inline-block;
+	margin: 0 56px 0 0;
 }
 
 #name-box{
