@@ -6,11 +6,43 @@ yellow: #ffcd00;
 turquois: #00c4cd;
 white: #fff;
 
-Max-width 850px
+
+TABLE OF CONTENTS
+
+1. GLOBAL SETTINGS
+	1.1 BOX FOR HOME PAGE AND ACTIVITIES PAGE
+
+2. NAVIGATION
+	2.1 HOME NAVIGATION
+
+3. STICKY FOOTER AND SOCIAL MEDIAS
+	3.1 SOCIAL MEDIA FOOTER
+	3.2 HOME FOOTER
+
+4. HOME PAGE
+
+5. ACTIVITIES PAGE
+	5.1 Image box and hover effect
+	5.2 Description
+	5.3 Price table
+
+6. FOOD AND DRINKS PAGE
+
+7. SPECIALS PAGE
+
+8. RESERVATION PAGE
+
+9. CONTACT PAGE
+	9.1 SIDE NAV
+
 */
+
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
+/* -----------------------
+    1. GLOBAL SETTINGS
+-------------------------*/
 html, body{
 	height: 100%;
 	margin: 0;
@@ -65,7 +97,7 @@ li{
 	list-style-type: none;
 }
 
-.main{
+main{
 	background-color: #fff;
 	margin: 0 auto -157px auto;
 	min-height: 100vh;
@@ -77,15 +109,54 @@ li{
 	padding: 0 30px;
 }
 
-/* Navigation */
+	/* --------------------------
+	1.1 Boxes for Home and Activities 
+	-----------------------------*/
+	.box{
+		display: -webkit-box;
+	  	display: -moz-box;
+	  	display: -ms-flexbox;
+	  	display: -webkit-flex;
+	  	display: flex;
+	    -webkit-flex-flow: row wrap;
+	  	justify-content: space-between;
+	  	margin: 0 auto;
+	  	max-width: 850px;
+	  	clear: left;
+	}
+
+	.box div{
+	    width: 220px;
+	    height: 180px;
+	    background-color: #3d454f;
+	    position: relative;
+	    margin: 0 5px 50px 5px;
+	}
+
+	.box div a, .spe-box div p {
+		background-color: #fff;
+		text-transform: uppercase;
+		position: absolute;
+		padding: 5px 20px;
+		top: 110px;
+		color: #3d454f;
+	}
+
+	.box div a:hover{
+		color: #ffcd00;
+	}
+
+/* -----------------------
+    2. NAVIGATION
+-------------------------*/
+header{
+	background-color: #ffcd00;
+}
+
 .nav img{
 	position: absolute;
 	top: 10px;
 	left: 50px;
-}
-
-header{
-	background-color: #ffcd00;
 }
 
 .nav ul {
@@ -100,7 +171,9 @@ header{
 	padding: 0 10px;
 }
 
-	/* Home nav */
+	/* ------------
+	2.1 Home nav 
+	---------------*/
 	#home-nav{
 		background-color: #fff;
 	}
@@ -117,7 +190,9 @@ header{
 		border-top: 3px solid #00c4cd;
 	}
 
-/* Footer */
+/* -----------------------
+    3. STICKY FOOTER AND SOCIAL MEDIAS
+-------------------------*/
 footer{
 	text-align: center;
 	font-weight: 300;
@@ -125,19 +200,6 @@ footer{
 	width: 100%;
 	color: #fff;
 	padding: 40px 0;
-}
-
-.sm-icons{
-	margin-bottom:20px;
-}
-
-.icons{
-	width: 50px;
-	height: 50px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	display: inline-block;
-	margin:0 15px 20px 15px;
 }
 
 footer, .push{
@@ -150,34 +212,52 @@ footer, .push{
 	margin: 0 auto 40px auto;
 }
 
-/* Free Social Media Icons made by Christophe Kerebel 
-https://dribbble.com/shots/2247532-Freebies-Social-flat-icons-set */
-#link-square1{
-	background-image: url('../media/fb-fill.png');
-}
+	/* --------------------
+	3.1 Social media icons footer
+	----------------------*/
+	.sm-icons{
+		margin-bottom:20px;
+	}
 
-#link-square1:hover{
-	background-image: url('../media/fb-fill-h.png');
-}
+	.icons{
+		width: 50px;
+		height: 50px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: inline-block;
+		margin:0 15px 20px 15px;
+	}
 
-#link-square2{
-	background-image: url('../media/tw-fill.png');
-}
+	/* Free Social Media Icons made by Christophe Kerebel 
+	https://dribbble.com/shots/2247532-Freebies-Social-flat-icons-set */
+	#link-square1{
+		background-image: url('../media/fb-fill.png');
+	}
 
-#link-square2:hover{
-	background-image: url('../media/tw-fill-h.png');
-}
+	#link-square1:hover{
+		background-image: url('../media/fb-fill-h.png');
+	}
 
-#link-square3{
-	background-image: url('../media/ins-fill.png');
-}
+	#link-square2{
+		background-image: url('../media/tw-fill.png');
+	}
 
-#link-square3:hover{
-	background-image: url('../media/ins-fill-h.png');
-}
+	#link-square2:hover{
+		background-image: url('../media/tw-fill-h.png');
+	}
+
+	#link-square3{
+		background-image: url('../media/ins-fill.png');
+	}
+
+	#link-square3:hover{
+		background-image: url('../media/ins-fill-h.png');
+	}
 
 
-	/* Home white footer */
+	/* --------------------
+	3.2 Home white footer 
+	----------------------*/
 	.w-footer-line{
 		border-top: 1px solid #3d454f;
 	}
@@ -211,20 +291,22 @@ https://dribbble.com/shots/2247532-Freebies-Social-flat-icons-set */
 		background-color: #fff;
 	}
 
-/* 	Home */
+/* -----------------------
+    4. HOME PAGE
+-------------------------*/
+h5{
+	font-family: 'Amatic SC', cursive;
+	font-size: 75pt;
+	margin-bottom: 20px;
+	color:#3d454f;
+}
+
 .intro{
 	position: absolute;
 	left: 50%;
 	font-size: 20pt;
 	padding: 0 30px;
 	font-weight: 300;
-}
-
-h5{
-	font-family: 'Amatic SC', cursive;
-	font-size: 75pt;
-	margin-bottom: 20px;
-	color:#3d454f;
 }
 
 .intro a {
@@ -236,10 +318,7 @@ h5{
 #home-main{
 	background-color: #00c4cd;
 	position: relative;
-}
-
-#home-main .push{
-	height: 40px;
+	min-width: 0%;
 }
 
 .banner-slides{
@@ -261,46 +340,13 @@ h5{
 
 #plane{
 	position: absolute;
-	top: 35%;
+	top: 200px;
 	max-width: 400px;
 }
-/* Boxes for Home and Activities */
-.box{
-	display: -webkit-box;
-  	display: -moz-box;
-  	display: -ms-flexbox;
-  	display: -webkit-flex;
-  	display: flex;
-    -webkit-flex-flow: row wrap;
-  	justify-content: space-between;
-  	margin: 0 auto;
-  	max-width: 850px;
-  	clear: left;
-}
 
-.box div{
-    width: 220px;
-    height: 180px;
-    background-color: #3d454f;
-    position: relative;
-    margin: 0 5px 50px 5px;
-}
-
-.box div a, .spe-box div p {
-	background-color: #fff;
-	text-transform: uppercase;
-	position: absolute;
-	padding: 5px 20px;
-	top: 110px;
-	color: #3d454f;
-}
-
-.box div a:hover{
-	color: #ffcd00;
-}
-
-
-/* Activities */
+/* -----------------------
+    5. ACTIVITIES PAGE
+-------------------------*/
 #act-box{
 	margin:7% auto 4% auto;
 	max-width: 850px;
@@ -323,136 +369,141 @@ h5{
     transition: opacity 500ms;
 }
 
-#brazil, #egypt, #uk, #italy, #japan, #usa{
-	padding: 80px 0;
-}
+	/* --------------------
+	5.1 Image box and hover effect
+	----------------------*/
+	span{
+		font-family: 'Amatic SC', cursive;
+		color: #fff;
+	    cursor: pointer;
+	    float: right;
+	    margin-right: 10px;
+	    opacity: 0;
+	    -webkit-transition: opacity 500ms;
+	    -moz-transition: opacity 500ms;
+	    -o-transition: opacity 500ms;
+	    transition: opacity 500ms;
+	}
 
-#brazil, #japan{
-	background-color: #00c4cd;
-}
+	#act-box a:hover span{
+		opacity: 1;
+	}
 
-#egypt, #italy, #usa{
-	background-color: #fff;
-}
+	#act-box a:hover div p{
+		opacity: 0;
+	}
 
-#uk{
-	background-color: #ffcd00;
-}
+	#br-img{
+		background-image: url('../media/br.png');
+	}
 
-span{
-	font-family: 'Amatic SC', cursive;
-	color: #fff;
-    cursor: pointer;
-    float: right;
-    margin-right: 10px;
-    opacity: 0;
-    -webkit-transition: opacity 500ms;
-    -moz-transition: opacity 500ms;
-    -o-transition: opacity 500ms;
-    transition: opacity 500ms;
-}
+	#eg-img{
+		background-image: url('../media/eg.png');
+	}
 
-#act-box a:hover span{
-	opacity: 1;
-}
+	#uk-img{
+		background-image: url('../media/uk.png');
+	}
 
-#act-box a:hover div p{
-	opacity: 0;
-}
+	#it-img{
+		background-image: url('../media/it.png');
+	}
 
-#br-img{
-	background-image: url('../media/br.png');
-}
+	#jp-img{
+		background-image: url('../media/jp.png');
+	}
 
-#eg-img{
-	background-image: url('../media/eg.png');
-}
+	#usa-img{
+		background-image: url('../media/usa.png');
+	}
 
-#uk-img{
-	background-image: url('../media/uk.png');
-}
+	/* --------------------
+	5.2 Description
+	----------------------*/
+	.images{
+		float: left;
+		background-color: #3d454f;
+	}
 
-#it-img{
-	background-image: url('../media/it.png');
-}
+	.images-right{
+		float: right;
+		background-color: #3d454f;
+	}
 
-#jp-img{
-	background-image: url('../media/jp.png');
-}
+	.descriptions{
+		width: 55%;
+		float: right;
+	}
 
-#usa-img{
-	background-image: url('../media/usa.png');
-}
+	.descriptions-right{
+		width: 50%;
+	}
 
+	.descriptions, .descriptions-right{
+		font-weight: 300;
+		line-height: 25px;
+	}
 
-.images{
-	float: left;
-	background-color: #3d454f;
-}
+	#brazil, #egypt, #uk, #italy, #japan, #usa{
+		padding: 80px 0;
+	}
 
-.images-right{
-	float: right;
-	background-color: #3d454f;
-}
+	#brazil, #japan{
+		background-color: #00c4cd;
+	}
 
-.descriptions{
-	width: 55%;
-	float: right;
-}
+	#egypt, #italy, #usa{
+		background-color: #fff;
+	}
 
-.descriptions-right{
-	width: 50%;
-}
+	#uk{
+		background-color: #ffcd00;
+	}
 
-.descriptions, .descriptions-right{
-	font-weight: 300;
-	line-height: 25px;
-}
+	/* --------------------
+	5.3 Price table
+	----------------------*/
+	.price{
+		padding-top: 20px;
+		clear: left;
+	}
 
-.price{
-	padding-top: 20px;
-	clear: left;
-}
+	.price-right{
+		clear: right;
+	}
 
-.price-right{
-	clear: right;
-}
+	.price-right h2{
+		padding-top: 30px;
+	}
 
-.price-right h2{
-	padding-top: 30px;
-}
+	#age-limit{
+		padding-left: 0;
+		color:#3d454f;
+	}
 
-#age-limit{
-	padding-left: 0;
-	color:#3d454f;
-}
-table{
-	margin-top: 20px;
-	width: 100%;
-	border: 1px solid #3d454f;
-}
+	table{
+		margin-top: 20px;
+		width: 100%;
+		border: 1px solid #3d454f;
+	}
 
-th{
-	width: 50%;
-	padding: 8px;
-	border-bottom: 1px solid #3d454f;
-}
+	th{
+		width: 50%;
+		padding: 8px;
+		border-bottom: 1px solid #3d454f;
+	}
 
-th.last{
-	border-bottom: none;
-}
+	th.last{
+		border-bottom: none;
+	}
 
-th.right{
-	border-left: 1px solid #3d454f;
-}
+	th.right{
+		border-left: 1px solid #3d454f;
+	}
 
-/* Food and Drinks */
-
-strong{
-	padding-left: 50px;
-	color: #ffcd00;
-}
-
+/* -----------------------
+    6. FOOD AND DRINKS PAGE
+-------------------------*/
 .menu li {
 	font-weight: 700;
 	list-style-type: none;
@@ -467,7 +518,19 @@ strong{
 	margin-left: 10px;
 }
 
-/* Specials */
+strong{
+	padding-left: 50px;
+	color: #ffcd00;
+}
+
+/* -----------------------
+    7. SPECIALS PAGE
+-------------------------*/
+h6{
+	text-transform: uppercase;
+	margin: 10px 6px;
+	font-size: 16pt;
+}
 
 #passport h1{
 	display: block;
@@ -492,12 +555,6 @@ strong{
 	color: #3d454f;
 }
 
-h6{
-	text-transform: uppercase;
-	margin: 10px 6px;
-	font-size: 16pt;
-}
-
 .spe-box div{
 	margin-bottom: 0;
 }
@@ -515,40 +572,13 @@ section ul{
 	font-weight: 300;
 }
 
-/* Contact */
-#store-info{
-	display: block;
-	margin-top: 40px;
-	float: right;
-	max-width: 35%;
-}
+/* -----------------------
+    8. RESERVATION PAGE
+-------------------------*/
 
-#store-info .icons{
-	margin: 5px 0;
-}
-
-.side-nav-h2{
-    font-size: 20pt;
-    text-transform: uppercase;
-    color: #00c4cd;
-}
-
-#store-info ul{
-	padding-left: 5px;
-}
-
-.days{
-	padding: 4px 0;
-	font-weight: bold;
-}
-
-#map{
-	width: 270px;
-	height: 200px;
-	background-color: black;
-	margin: 30px 0 10px 0;
-}
-
+/* -----------------------
+    9. CONTACT PAGE
+-------------------------*/
 #contact-left{
 	max-width: 60%;
 }
@@ -566,12 +596,48 @@ section ul{
 	color: #ffcd00;
 }
 
-.contact-sm-icons a{
-	color: #3d454f;
-}
+	/* --------------------
+	9.1 Side nav
+	----------------------*/
+	.side-nav-h2{
+	    font-size: 20pt;
+	    text-transform: uppercase;
+	    color: #00c4cd;
+	}
+
+	#store-info{
+		display: block;
+		margin-top: 40px;
+		float: right;
+		max-width: 35%;
+	}
+
+	#store-info .icons{
+		margin: 5px 0;
+	}
+
+	#store-info ul{
+		padding-left: 5px;
+	}
+
+	.days{
+		padding: 4px 0;
+		font-weight: bold;
+	}
+
+	#map{
+		width: 270px;
+		height: 200px;
+		background-color: black;
+		margin: 30px 0 10px 0;
+	}
+
+	.contact-sm-icons a{
+		color: #3d454f;
+	}
 
 
-.contact-sm-icons img{
-	vertical-align: middle;
-	padding: 5px 10px 5px 0px;
-}
+	.contact-sm-icons img{
+		vertical-align: middle;
+		padding: 5px 10px 5px 0px;
+	}
