@@ -315,10 +315,16 @@ h5{
 	border-radius: 5px;
 }
 
+.intro a:hover {
+	background-color: #3d454f;
+	color: #fff;
+}
+
 #home-main{
-	background-color: #00c4cd;
-	position: relative;
-	min-width: 0%;
+	background: #00c4cd url('../media/plane.png') no-repeat;
+	background-position: 0% 55%;
+	background-size: 30%;
+	min-height: initial;
 }
 
 .banner-slides{
@@ -336,12 +342,6 @@ h5{
 	font-weight: 300;
 	margin: 0 auto;
 	max-width: 850px;
-}
-
-#plane{
-	position: absolute;
-	top: 200px;
-	max-width: 400px;
 }
 
 /* -----------------------
@@ -584,10 +584,11 @@ section ul{
 }
 
 #contact-left h3{
-	color: #00c4cd;
+	color: #3d454f;
 	text-align: left;
-	margin: 0;
+	margin: 20px 0 0 0;
 }
+
 #contact-left .links, .contact-sm-icons a:hover{
 	color: #00c4cd;
 }
@@ -596,40 +597,74 @@ section ul{
 	color: #ffcd00;
 }
 
+#contact_form{
+	margin-top: 30px;
+}
+
+#contact_form label{
+	text-transform: uppercase;
+	font-size: 16pt;
+	color: #00c4cd;
+}
+
+#contact_form input, textarea{
+	margin: 4px 0 18px 0;
+	border: 1px solid #3d454f;
+	font-size: 12pt;
+	padding: 8px;
+	font-weight: 300;
+}
+
+#contact_form #submit_button{
+	background-color: #ffcd00;
+	padding: 10px 33px;
+	border-radius: 5px;
+	border: none;
+	color:#fff;
+}
+
+#contact_form #submit_button:hover{
+	color: white;
+	background-color: #3d454f;
+}
+
+.row{
+	display: inline-block;
+}
+
+#name-box{
+	margin-right: 68px;
+}
 	/* --------------------
 	9.1 Side nav
 	----------------------*/
-	.side-nav-h2{
+	#store-info{
+		display: block;
+		float: right;
+		max-width: 35%;
+	}
+
+	#store-info h2{
+		margin-top: 40px;
 	    font-size: 20pt;
 	    text-transform: uppercase;
 	    color: #00c4cd;
 	}
 
-	#store-info{
-		display: block;
-		margin-top: 40px;
-		float: right;
-		max-width: 35%;
-	}
-
-	#store-info .icons{
-		margin: 5px 0;
-	}
-
 	#store-info ul{
-		padding-left: 5px;
+		padding-left: 0px;
 	}
 
 	.days{
-		padding: 4px 0;
+		padding: 10px 0;
 		font-weight: bold;
 	}
 
 	#map{
-		width: 270px;
+		width: 290px;
 		height: 200px;
 		background-color: black;
-		margin: 30px 0 10px 0;
+		margin: 20px 0;
 	}
 
 	.contact-sm-icons a{
