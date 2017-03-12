@@ -304,13 +304,13 @@ footer, .push{
 h5{
 	font-family: 'Amatic SC', cursive;
 	font-size: 75pt;
-	margin-bottom: 20px;
+	margin: 90px 0 20px 0;
 	color:#3d454f;
 }
 
 .intro{
 	position: absolute;
-	left: 50%;
+	left: 55%;
 	font-size: 20pt;
 	padding: 0 30px;
 }
@@ -333,7 +333,7 @@ h5{
 	min-height: initial;
 }
 
-.banner-slides{
+.banner{
 	width: 100%;
 	background-color: #fff;
 }
@@ -374,6 +374,12 @@ h5{
     transition: opacity 500ms;
 }
 
+#to-top{
+	position: fixed;
+	bottom: 30px;
+	right: 70px;
+	animation-duration: 300;
+}
 	/* --------------------
 	5.1 Image box and hover effect
 	----------------------*/
@@ -748,14 +754,14 @@ input#res_submit_button {
 	color:#fff;
 }
 
-.form #submit_button:hover{
+.form #submit_button:hover, input#res_submit_button:hover{
 	color: white;
 	background-color: #3d454f;
 }
 
 .row{
 	display: inline-block;
-	margin: 0 56px 20px 0;
+	margin: 0 28px 20px 0;
 }
 
 #name-box{
