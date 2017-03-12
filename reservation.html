@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Reservation - Munchie's World</title>
 
-		<link rel="shortcut icon" href="assets/media/favicon.png">
+		<link rel="shortcut icon" type="image/png" href="assets/media/favicon.png">
         <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
         <link rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:1024px)" href="assets/css/screen_layout_medium.css"/>
@@ -46,9 +46,10 @@
 					
 					<h1>Reservation</h1>
 					
+					<div id="square"><div></div><p>* Store closed due to holiday break</p></div>
 					<div id="calendar"></div>
 				
-				<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+				<form class="form" action="#" method="POST" enctype="multipart/form-data">
 					
 					<div>
 						<div class="row">
@@ -73,15 +74,15 @@
 						</div>
 						<div class="row">
 							<label for="guests">Guests:</label><br />
-							<input id="guests" class="input" name="guests" type="number" value="" min="1" max="10" size="22" required/><br />
+							<input id="guests" class="input" name="guests" type="number" value="1" min="1" max="10" size="22" required/><br />
 						</div>
 						<div class="row">
 							<label for="time">Time:</label><br />
-							<input id="time" class="input" name="time" type="time" value="" size="22" required/><br />
+							<input id="time" class="input" name="time" type="time" value="10:00:00" step="600" size="22" required/><br />
 						</div>
 					</div>
 
-					<input id="submit_button" type="submit" value="Make reservation"/>
+					<input id="res_submit_button" type="submit" value="Make reservation"/>
 				</form>
 
 			</div>

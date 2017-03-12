@@ -1,7 +1,12 @@
 var events = [
-  {'Date': new Date(2017, 7, 4), 'Title': 'Closed. Independence Day'},
-  {'Date': new Date(2017, 6, 18), 'Title': 'New Garfield movie comes out!', 'Link': 'https://garfield.com'},
-  {'Date': new Date(2017, 6, 27), 'Title': '25 year anniversary', 'Link': 'https://www.google.com.au/#q=anniversary+gifts'},
+	{'Date': new Date(2017, 0, 1), 'Title': 'Closed. New Years Day'},
+	{'Date': new Date(2017, 0, 2), 'Title': 'Closed. New Years Day Off'},
+	{'Date': new Date(2017, 0, 16), 'Title': 'Closed. Martin Luther King Day'},
+	{'Date': new Date(2017, 4, 29), 'Title': 'Closed. Memorial Day'},
+	{'Date': new Date(2017, 6, 4), 'Title': 'Closed. Independence Day'},
+	{'Date': new Date(2017, 8, 4), 'Title': 'Closed. Labor Day'},
+	{'Date': new Date(2017, 10, 23), 'Title': 'Closed. Thanksgiving Break'},
+  	{'Date': new Date(2017, 10, 24), 'Title': 'Closed. Thanksgiving Break'},
 ];
 var settings = {};
 var element = document.getElementById('calendar');

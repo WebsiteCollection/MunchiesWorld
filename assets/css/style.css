@@ -575,6 +575,17 @@ section ul{
 /* -----------------------
     8. RESERVATION PAGE
 -------------------------*/
+#square div{
+	width: 15px;
+	height: 15px;
+	background-color: #00c4cd;
+	display: inline-block;
+}
+
+#square p{
+	display: inline-block;
+	margin-left: 5px;
+}
 .cld-main{
   	width: 100%;
   	margin-top: 20px;
@@ -672,49 +683,21 @@ section ul{
     margin: 0;
     padding: 30px 0;
 }
+
 .cld-title{
-    position: absolute;
-    z-index: 5;
-    display: none;
-    top: 35px;
-    left: 0;
-	padding: 5px 10px;
-	background: #fff;
-	white-space: nowrap;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	font-size: 12px;
-}
-
-.cld-number:hover .cld-title{
-	display: block;
-}
-
-.cld-title::before{
-	content: '';
-	position: absolute;
-	top: -7.5px; left: 10px;
-    width: 0;
-	height: 0;
-	border-left: 7.5px solid transparent;
-	border-right: 7.5px solid transparent;
-    border-bottom: 7.5px solid #ccc;
+	display: none;
 }
 
 .cld-number.eventday{
     font-weight: bold;
-    color: #0080FF;
+    color: #fff;
+    background-color: #00c4cd;
 }
 
-.cld-number.eventday:hover{
-    cursor: pointer;
-    background: #eee;
+input#res_submit_button {
+    margin-left: 38.5%;
+    margin-bottom: 50px;
 }
-
-.today .cld-number.eventday:hover{
-    background: #005EFF;
-}
-
 /* -----------------------
     9. CONTACT PAGE
 -------------------------*/
@@ -736,17 +719,17 @@ section ul{
 	color: #ffcd00;
 }
 
-#contact_form{
+.form{
 	margin-top: 50px;
 }
 
-#contact_form label{
+.form label{
 	text-transform: uppercase;
 	font-size: 16pt;
 	color: #00c4cd;
 }
 
-#contact_form input, textarea{
+.form input, textarea{
 	margin: 4px 0 18px 0;
 	border: 1px solid #3d454f;
 	font-size: 12pt;
@@ -754,7 +737,7 @@ section ul{
 	font-weight: 300;
 }
 
-#contact_form #submit_button{
+.form #submit_button, #res_submit_button{
 	background-color: #ffcd00;
 	padding: 10px 33px;
 	border-radius: 5px;
@@ -762,7 +745,7 @@ section ul{
 	color:#fff;
 }
 
-#contact_form #submit_button:hover{
+.form #submit_button:hover{
 	color: white;
 	background-color: #3d454f;
 }
@@ -775,6 +758,27 @@ section ul{
 #name-box{
 	margin-right: 68px;
 }
+
+::-webkit-input-placeholder{
+	font-family: 'Lato', sans-serif;
+	font-size: 13pt;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  	font-family: 'Lato', sans-serif;
+	font-size: 13pt;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+ 	font-family: 'Lato', sans-serif;
+	font-size: 13pt;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  	font-family: 'Lato', sans-serif;
+	font-size: 13pt;
+}
+
 	/* --------------------
 	9.1 Side nav
 	----------------------*/
