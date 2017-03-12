@@ -109,6 +109,14 @@ main{
 	padding: 0 30px;
 }
 
+.bold{
+	padding-left: 0;
+	color:#3d454f;
+}
+
+.home-body p, footer, .intro, .descriptions, .descriptions-right, .menu li p, .details, #passport p{
+	font-weight: 300;
+}
 	/* --------------------------
 	1.1 Boxes for Home and Activities 
 	-----------------------------*/
@@ -195,7 +203,6 @@ header{
 -------------------------*/
 footer{
 	text-align: center;
-	font-weight: 300;
 	background-color: #ffcd00;
 	width: 100%;
 	color: #fff;
@@ -306,7 +313,6 @@ h5{
 	left: 50%;
 	font-size: 20pt;
 	padding: 0 30px;
-	font-weight: 300;
 }
 
 .intro a {
@@ -339,7 +345,6 @@ h5{
 .home-body p{
 	padding: 10px 0;
 	color: #fff;
-	font-weight: 300;
 	margin: 0 auto;
 	max-width: 850px;
 }
@@ -440,7 +445,6 @@ h5{
 	}
 
 	.descriptions, .descriptions-right{
-		font-weight: 300;
 		line-height: 25px;
 	}
 
@@ -476,11 +480,6 @@ h5{
 		padding-top: 30px;
 	}
 
-	#age-limit{
-		padding-left: 0;
-		color:#3d454f;
-	}
-
 	table{
 		margin-top: 20px;
 		width: 100%;
@@ -508,10 +507,6 @@ h5{
 	font-weight: 700;
 	list-style-type: none;
 	margin-left: -20px;
-}
-
-.menu li p{
-	font-weight: 300;
 }
 
 .food-icons{
@@ -569,7 +564,6 @@ section ul{
 
 .details{
 	font-size: 12pt;
-	font-weight: 300;
 }
 
 /* -----------------------
@@ -698,6 +692,11 @@ input#res_submit_button {
     margin-left: 38.5%;
     margin-bottom: 50px;
 }
+
+#headline{
+	color:#3d454f;
+	text-align: left;
+}
 /* -----------------------
     9. CONTACT PAGE
 -------------------------*/
@@ -720,6 +719,10 @@ input#res_submit_button {
 }
 
 .form{
+	margin-top: 20px;
+}
+
+#contact-form{
 	margin-top: 50px;
 }
 
