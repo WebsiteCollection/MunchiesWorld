@@ -103,7 +103,7 @@ main{
 }
 
 .wrapper{
-	margin: 0 auto;
+	margin: 20px auto;
 	max-width: 850px;
 	padding: 0 30px;
 }
@@ -123,14 +123,16 @@ main{
 --------------------------------------*/
 
 @media only screen and (min-width: 50px) and (max-width: 500px){
-	body{
-		font-size: 14pt;
+	
+	h1{
+		font-size: 26pt;
 	}
 
 	h3{
 		font-size: 45pt;
 		margin: 10px 0;
 	}
+
 }
 
 	/* --------------------------
@@ -481,7 +483,17 @@ MOBILE STYLES
 	position: fixed;
 	bottom: 30px;
 	right: 70px;
-	animation-duration: 300;
+}
+
+/* -----------------------------------
+MOBILE STYLES 
+--------------------------------------*/
+@media only screen and (min-width: 50px) and (max-width: 500px){
+		
+	#act-box div p{
+		padding-top: 150px;
+	}
+
 }
 	/* --------------------
 	5.1 Image box and hover effect
@@ -536,6 +548,16 @@ MOBILE STYLES
 		background-image: url('../media/usa.png');
 	}
 
+	/* -----------------------------------
+	MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+			
+		span{
+			opacity: 1;
+		}
+
+	}
 	/* --------------------
 	5.2 Description
 	----------------------*/
@@ -578,6 +600,32 @@ MOBILE STYLES
 		background-color: #ffcd00;
 	}
 
+	/* -----------------------------------
+	MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		.images, .images-right{
+			float: none;
+			margin: 20px auto;
+			display: block;
+
+		}
+
+		.descriptions, .descriptions-right{
+			width: 100%;
+			float: none;
+		}
+
+		.descriptions h2, .descriptions-right h2{
+			text-align: center;
+		}
+
+		#brazil, #egypt, #uk, #italy, #japan, #usa{
+			padding: 15px 0;
+		}
+
+	}
+
 	/* --------------------
 	5.3 Price table
 	----------------------*/
@@ -614,6 +662,19 @@ MOBILE STYLES
 		border-left: 1px solid #3d454f;
 	}
 
+	/* -----------------------------------
+	MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		.price , .price-right, .price-right h2{
+			padding-top: 0px;
+		}
+
+		.price h2, .price-right h2{
+			font-size: 20pt;
+		}
+	}
+
 /* -----------------------
     6. FOOD AND DRINKS PAGE
 -------------------------*/
@@ -631,6 +692,15 @@ strong{
 	padding-left: 50px;
 	color: #ffcd00;
 }
+
+	/* -----------------------------------
+	MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		.menu li {
+			margin-left: -36px;
+		}
+	}
 
 /* -----------------------
     7. SPECIALS PAGE
@@ -680,6 +750,27 @@ section ul{
 	font-size: 12pt;
 }
 
+/* -----------------------------------
+	MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		h6{
+			margin: 10px 25px;
+		}
+		section ul{
+			padding-left: 25px;
+		}
+		#passport img, #passport p{
+			float: none;
+			margin: 0 auto;
+			display: block;
+		}
+
+		#passport p{
+			width: 100%;
+			margin: 20px 0;
+		}
+	}
 /* -----------------------
     8. RESERVATION PAGE
 -------------------------*/
@@ -804,13 +895,29 @@ section ul{
 
 input#res_submit_button {
     margin-left: 38.5%;
-    margin-bottom: 50px;
 }
 
 #headline{
 	color:#3d454f;
 	text-align: left;
 }
+
+/* -----------------------------------
+	MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		.cld-number{
+			padding: 20px 0;
+		}
+		input#res_submit_button {
+		    margin-left: 0;
+		}
+
+		.info h3{
+			font-size: 30pt;
+		}
+	}
+
 /* -----------------------
     9. CONTACT PAGE
 -------------------------*/
@@ -906,7 +1013,7 @@ input#res_submit_button {
 	}
 
 	#store-info h2{
-		margin-top: 40px;
+		margin-top: 10px;
 	    font-size: 20pt;
 	    text-transform: uppercase;
 	    color: #00c4cd;
