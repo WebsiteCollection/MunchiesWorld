@@ -808,7 +808,30 @@ section ul{
 .details{
 	font-size: 12pt;
 }
-	
+
+#annual{
+	background-image: url('../media/an-pass.png');
+}
+
+#monthly{
+	background-image: url('../media/mon-pass.png');
+}
+
+#daily{
+	background-image: url('../media/day-pass.png');
+}
+
+#duo{
+	background-image: url('../media/duo.png');
+}
+
+#fno{
+	background-image: url('../media/friday.png');
+}
+
+#bowl{
+	background-image: url('../media/bowl.png');
+}
 	/* -----------------------------------
 	7-1 TABLET STYLES 
 	--------------------------------------*/
