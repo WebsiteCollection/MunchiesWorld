@@ -163,7 +163,7 @@ main{
 		text-transform: uppercase;
 		position: absolute;
 		padding: 5px 20px;
-		top: 110px;
+		top: 125px;
 		color: #3d454f;
 	}
 
@@ -459,6 +459,17 @@ h5{
 	max-width: 850px;
 }
 
+#activities{
+	background-image: url('../media/act.png');
+}
+
+#food{
+	background-image: url('../media/food.png');
+}
+
+#deals{
+	background-image: url('../media/packages.png');
+}
 	/* -----------------------------------
 	4-1 MOBILE STYLES 
 	--------------------------------------*/
@@ -791,6 +802,7 @@ h6{
 .spe-box div p{
 	background-color: #ffcd00;
 	color: #3d454f;
+	top:110px;
 }
 
 .spe-box div{
