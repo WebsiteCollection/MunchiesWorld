@@ -215,7 +215,7 @@ header{
 }
 
 img.nav-logo{
-	left: 24%;
+	left: 21%;
 	top: 15px;
 	position: absolute;
 	display: none;
@@ -231,6 +231,7 @@ img.nav-logo{
 2-1 MOBILE STYLES
 -----------------------------*/
  @media  only screen and (min-width: 50px) and (max-width: 500px){
+ 	
  	img.nav-logo{
  		display: block;
  	}
@@ -461,7 +462,7 @@ MOBILE STYLES
 --------------------------------------*/
 @media only screen and (min-width: 50px) and (max-width: 500px){
 	.banner{
-		margin-top: 10px;
+		margin-top: 20px;
 	}
 
 	.wrapper{
