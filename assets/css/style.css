@@ -117,6 +117,10 @@ main{
 	font-weight: 300;
 }
 
+#activities, #food, #deals, #annual, #monthly, #daily, #duo, #fno, #bowl{
+	background-repeat: no-repeat;
+	background-position: center;
+}
 	/* -----------------------------------
 		1-1 MOBILE STYLES 
 	--------------------------------------*/
@@ -182,6 +186,10 @@ main{
 				width: 300px;
 				height: 200px;
 				margin: 0 auto 60px auto;
+			}
+
+			.box div a, .spe-box div p{
+				top: 140px;
 			}
 		}
 
@@ -877,7 +885,10 @@ section ul{
 			width: 100%;
 			margin: 20px 0;
 		}
-	}
+
+		.spe-box div p{
+			top:125px;
+			}
 /* -----------------------
     8. RESERVATION PAGE
 -------------------------*/
