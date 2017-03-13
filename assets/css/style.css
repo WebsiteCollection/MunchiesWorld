@@ -215,8 +215,9 @@ header{
 }
 
 img.nav-logo{
-	left: 22%;
+	left:50%;
 	top: 15px;
+	transform: translateX(-50%);
 	position: absolute;
 	display: none;
 }
@@ -284,12 +285,6 @@ img.nav-logo{
 		}
 	}
 
-	@media  only screen and (min-width: 501px) and (max-width: 1020px){
-		img.nav-logo{
-			left: 36%;
-		}
-
-	}
 	/* ------------
 	2.1 Home nav 
 	---------------*/
@@ -663,7 +658,7 @@ h5{
 				width: 51%;
 			}
 		}
-		
+
 		/* -----------------------------------
 		5.2-2 MOBILE STYLES 
 		--------------------------------------*/
