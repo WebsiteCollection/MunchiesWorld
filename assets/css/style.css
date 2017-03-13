@@ -117,9 +117,10 @@ main{
 	font-weight: 300;
 }
 
-#activities, #food, #deals, #annual, #monthly, #daily, #duo, #fno, #bowl{
+#activities, #food, #deals, #annual, #monthly, #daily, #duo, #fno, #bowl, #br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img{
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 	/* -----------------------------------
 		1-1 MOBILE STYLES 
@@ -589,13 +590,8 @@ h5{
 		opacity: 0;
 	}
 
-	#br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img{
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-
 	#br-img{
-		background-image: url('../media/br.png');
+		background-image: url('../media/br2.png');
 	}
 
 	#eg-img{
