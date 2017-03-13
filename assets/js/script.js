@@ -1,3 +1,14 @@
+// Navigation //
+
+    $( ".toggle-button" ).click(function() {
+      $( ".nav" ).slideToggle(300)
+    });
+
+    $('.toggle-button').on('click', function() {
+          this.classList.toggle('change');
+      });
+ 
+                   
 // Back to Top Button //
 window.onscroll = function() {
   scrollFunction()
@@ -36,11 +47,3 @@ function myMap() {
   });
 }
 
-// Datepicker not supported solve //
-$(document).ready(function() {
-  if (datefield.type!="date"){
-         jQuery(function($){ 
-             $('#date').datepicker();
-         })
-  }
-});

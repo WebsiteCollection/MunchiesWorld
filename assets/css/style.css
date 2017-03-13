@@ -46,7 +46,6 @@ TABLE OF CONTENTS
 html, body{
 	height: 100%;
 	margin: 0;
-	min-width: 1025px;
 }
 
 body{
@@ -74,7 +73,7 @@ hr{
 h1{
 	font-size: 38pt;
 	text-transform: uppercase;
-	display: inline-block;
+	display: inline;
 	color: #00c4cd;
 	margin-bottom: 5px;
 }
@@ -117,6 +116,23 @@ main{
 .home-body p, footer, .intro, .descriptions, .descriptions-right, .menu li p, .details, #passport p{
 	font-weight: 300;
 }
+
+
+/* -----------------------------------
+	1-1 MOBILE STYLES 
+--------------------------------------*/
+
+@media only screen and (min-width: 50px) and (max-width: 500px){
+	body{
+		font-size: 14pt;
+	}
+
+	h3{
+		font-size: 45pt;
+		margin: 10px 0;
+	}
+}
+
 	/* --------------------------
 	1.1 Boxes for Home and Activities 
 	-----------------------------*/
@@ -153,6 +169,20 @@ main{
 	.box div a:hover{
 		color: #ffcd00;
 	}
+	/* --------------------------
+	1.1.1 Mobile Style for boxes
+	-----------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		.box{
+			display: block;
+		}
+
+		.box div{
+			width: 300px;
+			height: 200px;
+			margin: 0 auto 60px auto;
+		}
+	}
 
 /* -----------------------
     2. NAVIGATION
@@ -161,6 +191,9 @@ header{
 	background-color: #ffcd00;
 }
 
+.nav{
+	display: block;
+}
 .nav img{
 	position: absolute;
 	top: 10px;
@@ -179,6 +212,62 @@ header{
 	padding: 0 10px;
 }
 
+@media screen and (min-width:501px) {
+    
+    .nav { 
+       	display:block !important;
+    }
+}
+/*---------------------------
+2-1 MOBILE STYLES
+-----------------------------*/
+ @media  only screen and (min-width: 50px) and (max-width: 500px){
+    .nav{
+    	display: none;
+    }
+
+    .toggle-button {
+	    display: inline-block;
+	    cursor: pointer;
+	    margin: 10px 20px;
+	}
+
+	.bar1, .bar2, .bar3 {
+	    width: 36px;
+	    height: 5px;
+	    background-color: #333;
+	    margin: 6px 0;
+	    transition: 0.4s;
+	}
+
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-8px, 7px) ;
+	    transform: rotate(-45deg) translate(-8px, 7px) ;
+	}
+
+	.change .bar2 {
+		opacity: 0;
+	}
+
+	.change .bar3 {
+	    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	    transform: rotate(45deg) translate(-8px, -8px) ;
+	}
+
+	.nav img{
+		display: none;
+	}
+
+	.nav ul{
+		padding: 0;
+	}
+
+	.nav ul li{
+		padding: 10px 0 20px 0;
+		text-align: center;
+		display: block;
+	}
+ }
 	/* ------------
 	2.1 Home nav 
 	---------------*/
@@ -349,6 +438,20 @@ h5{
 	max-width: 850px;
 }
 
+/* -----------------------------------
+MOBILE STYLES 
+--------------------------------------*/
+@media only screen and (min-width: 50px) and (max-width: 500px){
+		
+	.wrapper{
+		padding: 0 20px;
+	}
+	.home-body p{
+		line-height: 25px;
+	}
+
+}
+
 /* -----------------------
     5. ACTIVITIES PAGE
 -------------------------*/
@@ -402,6 +505,11 @@ h5{
 
 	#act-box a:hover div p{
 		opacity: 0;
+	}
+
+	#br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img{
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	#br-img{
@@ -829,3 +937,21 @@ input#res_submit_button {
 		vertical-align: middle;
 		padding: 5px 10px 5px 0px;
 	}
+/* -----------------------------------
+
+TABLET STYLES 
+
+--------------------------------------*/
+
+@media only screen and (min-width: 501px) and (max-width: 1024px){
+
+
+}
+
+
+
+
+
+
+
+
