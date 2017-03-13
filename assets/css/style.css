@@ -117,7 +117,6 @@ main{
 	font-weight: 300;
 }
 
-
 /* -----------------------------------
 	1-1 MOBILE STYLES 
 --------------------------------------*/
@@ -129,7 +128,7 @@ main{
 	}
 
 	h3{
-		font-size: 45pt;
+		font-size: 30pt;
 		margin: 10px 0;
 	}
 
@@ -191,6 +190,7 @@ main{
 -------------------------*/
 header{
 	background-color: #ffcd00;
+	width: 100%;
 }
 
 .nav{
@@ -214,6 +214,13 @@ header{
 	padding: 0 10px;
 }
 
+img.nav-logo{
+	left: 24%;
+	top: 15px;
+	position: absolute;
+	display: none;
+}
+
 @media screen and (min-width:501px) {
     
     .nav { 
@@ -224,6 +231,10 @@ header{
 2-1 MOBILE STYLES
 -----------------------------*/
  @media  only screen and (min-width: 50px) and (max-width: 500px){
+ 	img.nav-logo{
+ 		display: block;
+ 	}
+
     .nav{
     	display: none;
     }
@@ -231,7 +242,8 @@ header{
     .toggle-button {
 	    display: inline-block;
 	    cursor: pointer;
-	    margin: 10px 20px;
+	    margin: 97px 20px 10px 20px;
+
 	}
 
 	.bar1, .bar2, .bar3 {
@@ -424,6 +436,10 @@ h5{
 	min-height: initial;
 }
 
+#home-main .wrapper{
+	margin: 0 auto;
+}
+
 .banner{
 	width: 100%;
 	background-color: #fff;
@@ -444,12 +460,31 @@ h5{
 MOBILE STYLES 
 --------------------------------------*/
 @media only screen and (min-width: 50px) and (max-width: 500px){
-		
+	.banner{
+		margin-top: 10px;
+	}
+
 	.wrapper{
 		padding: 0 20px;
 	}
+
 	.home-body p{
 		line-height: 25px;
+	}
+
+	h5{
+		margin:10px 0;
+		font-size: 30pt;
+	}
+
+	.intro{
+		font-size: 12pt;
+		left: 52%;
+		padding: 0;
+	}
+
+	.intro p{
+		margin:0 0 15px 0;
 	}
 
 }
@@ -494,6 +529,9 @@ MOBILE STYLES
 		padding-top: 150px;
 	}
 
+	#to-top{
+		right: 10px;
+	}
 }
 	/* --------------------
 	5.1 Image box and hover effect
@@ -755,11 +793,13 @@ section ul{
 	--------------------------------------*/
 	@media only screen and (min-width: 50px) and (max-width: 500px){
 		h6{
-			margin: 10px 25px;
+			margin: 10px 20px;
 		}
+
 		section ul{
-			padding-left: 25px;
+			padding-left: 20px;
 		}
+
 		#passport img, #passport p{
 			float: none;
 			margin: 0 auto;
@@ -909,6 +949,7 @@ input#res_submit_button {
 		.cld-number{
 			padding: 20px 0;
 		}
+
 		input#res_submit_button {
 		    margin-left: 0;
 		}
@@ -916,6 +957,7 @@ input#res_submit_button {
 		.info h3{
 			font-size: 30pt;
 		}
+
 	}
 
 /* -----------------------
@@ -1003,6 +1045,18 @@ input#res_submit_button {
 	font-size: 13pt;
 }
 
+/* -----------------------------------
+MOBILE STYLES 
+--------------------------------------*/
+@media only screen and (min-width: 50px) and (max-width: 500px){
+	#contact-left{
+		max-width: 100%;
+	}
+	#message{
+		width: 300px;
+	}
+}
+
 	/* --------------------
 	9.1 Side nav
 	----------------------*/
@@ -1044,16 +1098,22 @@ input#res_submit_button {
 		vertical-align: middle;
 		padding: 5px 10px 5px 0px;
 	}
-/* -----------------------------------
 
-TABLET STYLES 
+	/* -----------------------------------
+	MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		#store-info{
+			float: none;
+			max-width: 100%;
+		}
 
---------------------------------------*/
+		#store-info h2{
+			border-bottom: 2px solid #00c4cd;
+			font-size: 16pt;
+		}
+	}
 
-@media only screen and (min-width: 501px) and (max-width: 1024px){
-
-
-}
 
 
 
