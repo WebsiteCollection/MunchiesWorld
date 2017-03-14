@@ -10,9 +10,14 @@ white: #fff;
 TABLE OF CONTENTS
 
 1. GLOBAL SETTINGS
+	1-1 MOBILE STYLES 
+	
 	1.1 BOX FOR HOME PAGE AND ACTIVITIES PAGE
+		1.1-1 Mobile Style for boxes
 
 2. NAVIGATION
+	2-1 TABLET and MOBILE STYLES
+
 	2.1 HOME NAVIGATION
 
 3. STICKY FOOTER AND SOCIAL MEDIAS
@@ -20,20 +25,40 @@ TABLE OF CONTENTS
 	3.2 HOME FOOTER
 
 4. HOME PAGE
+	4-1 TABLET STYLES 
+	4-2 MOBILE STYLES 
 
 5. ACTIVITIES PAGE
+	5-1 TABLET STYLES 
+	5-2 MOBILE STYLES 
+
 	5.1 Image box and hover effect
+		5.1-1 TABLET AND MOBILE STYLES
+
 	5.2 Description
+		5.2-1 TABLET STYLES 
+		5.2-2 MOBILE STYLES 
+
 	5.3 Price table
+		5.3-1 MOBILE STYLES 
 
 6. FOOD AND DRINKS PAGE
+	6-1 MOBILE STYLES 
 
 7. SPECIALS PAGE
+	7-1 TABLET STYLES 
+	7-2 MOBILE STYLES 
 
 8. RESERVATION PAGE
+	8-1 MOBILE STYLES 
 
 9. CONTACT PAGE
+	9-1 TABLET STYLES
+	9-2 MOBILE STYLES 
+
 	9.1 SIDE NAV
+		9.1-1 TABLET STYLES 
+		9.1-2 MOBILE STYLES 
 
 */
 
@@ -126,7 +151,6 @@ main{
 	/* -----------------------------------
 		1-1 MOBILE STYLES 
 	--------------------------------------*/
-
 	@media only screen and (min-width: 50px) and (max-width: 500px){
 		
 		h1{
@@ -161,7 +185,7 @@ main{
 	    height: 180px;
 	    background-color: #3d454f;
 	    position: relative;
-	    margin: 0 5px 50px 5px;
+	    margin: 0 5px;
 	}
 
 	.box div a, .spe-box div p {
@@ -176,6 +200,7 @@ main{
 	.box div a:hover{
 		color: #ffcd00;
 	}
+
 		/* --------------------------
 		1.1-1 Mobile Style for boxes
 		-----------------------------*/
@@ -206,6 +231,7 @@ header{
 .nav{
 	display: block;
 }
+
 .nav img{
 	position: absolute;
 	top: 10px;
@@ -377,7 +403,6 @@ footer, .push{
 		background-image: url('../media/ins-fill-h.png');
 	}
 
-
 	/* --------------------
 	3.2 Home white footer 
 	----------------------*/
@@ -480,14 +505,20 @@ h5{
 #deals{
 	background-image: url('../media/packages.png');
 }
+
+.sub-text{
+	color: #fff;
+	text-align: center;
+}
 	/* -----------------------------------
-	4-1 MOBILE STYLES 
+	4-1 TABLET STYLES 
 	--------------------------------------*/
 	@media only screen and (min-width: 501px) and (max-width: 1020px){
 		h5{
 			font-size: 53pt;
 			margin:30px 0 0 0;
 		}
+
 		.intro{
 			font-size: 17pt;
 			left: 52%;
@@ -867,6 +898,7 @@ section ul{
 #bowl{
 	background-image: url('../media/bowl.png');
 }
+
 	/* -----------------------------------
 	7-1 TABLET STYLES 
 	--------------------------------------*/
