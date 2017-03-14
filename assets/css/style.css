@@ -159,7 +159,7 @@ main{
 
 		h3{
 			font-size: 30pt;
-			margin: 10px 0;
+			margin: 20px 0;
 		}
 
 	}
@@ -1073,7 +1073,12 @@ input#res_submit_button {
 	--------------------------------------*/
 	@media only screen and (min-width: 50px) and (max-width: 500px){
 		.cld-number{
-			padding: 20px 0;
+			padding: 15px 0;
+			font-size: 10pt;
+		}
+
+		.cld-datetime .today{
+			font-size: 22pt;
 		}
 
 		input#res_submit_button {
