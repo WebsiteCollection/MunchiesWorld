@@ -117,13 +117,10 @@ main{
 	font-weight: 300;
 }
 
-#activities, #food, #deals, #monthly, #daily, #duo, #fno, #bowl, #br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img{
+#activities, #food, #deals, #annual, #monthly, #daily, #duo, #fno, #bowl, #br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img{
 	background-repeat: no-repeat;
 	background-position: center;
-}
-
-#br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img,#annual{
- 	background-size: cover;
+	background-size: cover;
 }
 
 	/* -----------------------------------
