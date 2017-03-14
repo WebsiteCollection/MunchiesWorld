@@ -1,12 +1,12 @@
 // Navigation //
 
-    $( ".toggle-button" ).click(function() {
-      $( ".nav" ).slideToggle(300)
-    });
+$( ".toggle-button" ).click(function() {
+   $( ".nav" ).slideToggle(300)
+});
 
-    $('.toggle-button').on('click', function() {
-          this.classList.toggle('change');
-      });
+$('.toggle-button').on('click', function() {
+    this.classList.toggle('change');
+});
  
                    
 // Back to Top Button //
@@ -17,11 +17,13 @@ window.onscroll = function() {
 var topButton = document.getElementById("to-top");
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    topButton.style.display = "block";
-  }
-  else{
-    topButton.style.display = "none";
+  if (topButton) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      topButton.style.display = "block";
+    }
+    else{
+      topButton.style.display = "none";
+    }
   }
 }
 
