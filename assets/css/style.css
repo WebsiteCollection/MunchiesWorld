@@ -117,12 +117,12 @@ main{
 	font-weight: 300;
 }
 
-#activities, #food, #deals, #annual, #monthly, #daily, #duo, #fno, #bowl, #br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img{
+#activities, #food, #deals, #monthly, #daily, #duo, #fno, #bowl, #br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img{
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-#br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img{
+#br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img,#annual{
  	background-size: cover;
 }
 
@@ -473,7 +473,7 @@ h5{
 }
 
 #activities{
-	background-image: url('../media/act.png');
+	background-image: url('../media/activities.png');
 }
 
 #food{
@@ -595,7 +595,7 @@ h5{
 	}
 
 	#br-img{
-		background-image: url('../media/br2.png');
+		background-image: url('../media/br.png');
 	}
 
 	#eg-img{
@@ -763,7 +763,7 @@ h5{
 }
 
 .food-icons{
-	margin-left: 10px;
+	margin-left: 4px;
 }
 
 strong{
@@ -830,7 +830,7 @@ section ul{
 }
 
 #annual{
-	background-image: url('../media/an-pass.png');
+	background-image: url('../media/an-pass2.png');
 }
 
 #monthly{
