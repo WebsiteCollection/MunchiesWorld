@@ -619,14 +619,17 @@ h5{
 	}
 
 		/* -----------------------------------
-		5.1-1 MOBILE STYLES 
+		5.1-1 TABLET AND MOBILE STYLES 
 		--------------------------------------*/
-		@media only screen and (min-width: 50px) and (max-width: 500px){
+		@media only screen and (min-width: 50px) and (max-width: 1020px){
 				
 			span{
 				opacity: 1;
 			}
 
+			#act-box a:hover div p{
+				opacity: 1;
+			}
 		}
 	/* --------------------
 	5.2 Description
@@ -830,7 +833,7 @@ section ul{
 }
 
 #annual{
-	background-image: url('../media/an-pass2.png');
+	background-image: url('../media/an-pass.png');
 }
 
 #monthly{
