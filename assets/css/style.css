@@ -120,8 +120,12 @@ main{
 #activities, #food, #deals, #annual, #monthly, #daily, #duo, #fno, #bowl, #br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img{
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
 }
+
+#br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img{
+ 	background-size: cover;
+}
+
 	/* -----------------------------------
 		1-1 MOBILE STYLES 
 	--------------------------------------*/
@@ -184,7 +188,7 @@ main{
 			}
 
 			.box div{
-				width: 300px;
+				width: 260px;
 				height: 200px;
 				margin: 0 auto 60px auto;
 			}
