@@ -1,37 +1,37 @@
-// Navigation //
+$(document).ready(function() {
 
-$( ".toggle-button" ).click(function() {
-   $( ".nav" ).slideToggle(300)
+  // Navigation //
+
+  $( ".toggle-button" ).click(function() {
+     $( ".nav" ).slideToggle(300)//duration of 300
+  });
+
+  $('.toggle-button').on('click', function() {
+      this.classList.toggle('change');//changing nav style: from hamburger to x
+  });
+           
+  // Back to Top Button //
+
+  var topButton = $('.to-top');
+
+      //hide or show the "back to top" link
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 450){
+          topButton.fadeIn();
+        }
+        else {            
+          topButton.fadeOut();
+        }
+      });
+
+      //smooth scroll to top
+      topButton.click(function(event){
+        event.preventDefault();
+        $('html,body').animate({ scrollTop: 0 }, 500);
+        return false;
+      }); 
+
 });
-
-$('.toggle-button').on('click', function() {
-    this.classList.toggle('change');
-});
- 
-                   
-// Back to Top Button //
-window.onscroll = function() {
-  scrollFunction()
-};
-
-var topButton = document.getElementById("to-top");
-
-function scrollFunction() {
-  if (topButton) {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      topButton.style.display = "block";
-    }
-    else{
-      topButton.style.display = "none";
-    }
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
 
 // Google Map //
 function myMap() {

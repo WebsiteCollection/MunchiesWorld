@@ -25,8 +25,9 @@ TABLE OF CONTENTS
 	3.2 HOME FOOTER
 
 4. HOME PAGE
-	4-1 TABLET STYLES 
-	4-2 MOBILE STYLES 
+	4-1 TABLET AND MOBILE STYLES 
+	4-2 TABLET STYLES 
+	4-3 MOBILE STYLES 
 
 5. ACTIVITIES PAGE
 	5-1 TABLET STYLES 
@@ -46,8 +47,9 @@ TABLE OF CONTENTS
 	6-1 MOBILE STYLES 
 
 7. SPECIALS PAGE
-	7-1 TABLET STYLES 
-	7-2 MOBILE STYLES 
+	7-1 TABLET AND MOBILE STYLES 
+	7-2 TABLET STYLES 
+	7-3 MOBILE STYLES 
 
 8. RESERVATION PAGE
 	8-1 MOBILE STYLES 
@@ -510,8 +512,26 @@ h5{
 	color: #fff;
 	text-align: center;
 }
+	
 	/* -----------------------------------
-	4-1 TABLET STYLES 
+	4-1 TABLET AND MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 1020px){
+		#activities{
+			background-image: url('../media/activities-mobile.png');
+		}
+
+		#food{
+			background-image: url('../media/food-mobile.png');
+		}
+
+		#deals{
+			background-image: url('../media/packages-mobile.png');
+		}
+	}
+
+	/* -----------------------------------
+	4-2 TABLET STYLES 
 	--------------------------------------*/
 	@media only screen and (min-width: 501px) and (max-width: 1020px){
 		h5{
@@ -527,7 +547,7 @@ h5{
 	}
 	
 	/* -----------------------------------
-	4-2 MOBILE STYLES 
+	4-3 MOBILE STYLES 
 	--------------------------------------*/
 	@media only screen and (min-width: 50px) and (max-width: 500px){
 		.banner{
@@ -563,7 +583,7 @@ h5{
     5. ACTIVITIES PAGE
 -------------------------*/
 #act-box{
-	margin:7% auto 4% auto;
+	margin:10px auto 50px auto;
 	max-width: 850px;
 }
 
@@ -584,17 +604,18 @@ h5{
     transition: opacity 500ms;
 }
 
-#to-top{
+.to-top{
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
+	display: none;
 }
 	
 	/* -----------------------------------
 	5-1 TABLET STYLES 
 	--------------------------------------*/
 	@media only screen and (min-width: 501px) and (max-width:1020px){
-		#to-top{
+		.to-top{
 			right: 10px;
 		}
 	}
@@ -608,7 +629,7 @@ h5{
 			padding-top: 150px;
 		}
 
-		#to-top{
+		.to-top{
 			right: 10px;
 		}
 	}
@@ -898,9 +919,25 @@ section ul{
 #bowl{
 	background-image: url('../media/bowl.png');
 }
+	/* -----------------------------------
+	7-1 TABLET AND MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 1020px){
+		#annual{
+			background-image: url('../media/an-pass-mobile.png');
+		}
+
+		#monthly{
+			background-image: url('../media/mon-pass-mobile.png');
+		}
+
+		#daily{
+			background-image: url('../media/day-pass-mobile.png');
+		}
+	}
 
 	/* -----------------------------------
-	7-1 TABLET STYLES 
+	7-2 TABLET STYLES 
 	--------------------------------------*/
 	@media only screen and (min-width: 501px) and (max-width: 1020px){
 		#passport p{
@@ -911,7 +948,7 @@ section ul{
 	}
 
 	/* -----------------------------------
-	7-2 MOBILE STYLES 
+	7-3 MOBILE STYLES 
 	--------------------------------------*/
 	@media only screen and (min-width: 50px) and (max-width: 500px){
 		h6{
@@ -953,7 +990,6 @@ section ul{
 }
 .cld-main{
   	width: 100%;
-  	margin-top: 20px;
 }
 
 .cld-main a{
@@ -1085,7 +1121,7 @@ input#res_submit_button {
 		    margin-left: 0;
 		}
 
-		.info h3{
+		#reservation h3{
 			font-size: 30pt;
 		}
 

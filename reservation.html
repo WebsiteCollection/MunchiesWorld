@@ -13,7 +13,7 @@
 	<body>
 		<header>
 			
-			<img src="assets/media/logo-w.png" alt="logo - Munchie's World" class="nav-logo" width="225">
+			<img src="assets/media/logo-w-mobile.png" alt="logo - Munchie's World" class="nav-logo" width="225" draggable="false">
 			
 			<div class="button-wrap">
 				<div class="toggle-button">
@@ -24,7 +24,7 @@
 			</div>
 
 			<div class="nav">
-				<img src="assets/media/logo-w.png" alt="logo - Munchie's World" width="225">
+				<img src="assets/media/logo-w.png" alt="logo - Munchie's World" draggable="false">
 				<ul>
 					<li><a href="index.html">home</a></li>
 					<li><a href="activities.html">activities</a></li>
@@ -43,13 +43,21 @@
 
 			<div class="wrapper">
 				
-				<div class="info">
+				<div id="reservation">
 					
 					<h1>Reservation</h1>
+
+					<div id="square">
+
+						<div></div>
+
+						<p>* Store closed due to holiday break</p>
+
+					</div>
 					
-					<div id="square"><div></div><p>* Store closed due to holiday break</p></div>
 					<div id="calendar"></div>
 					<h3 id="headline">Make your party reservation today or call 123-456-7890</h3>
+					<p>* Reservation starts from 11 A.M to 7 P.M</p>
 				
 				<form class="form" action="#" method="POST" enctype="multipart/form-data">
 					
@@ -80,7 +88,7 @@
 						</div>
 						<div class="row">
 							<label for="time">Time:</label><br />
-							<input id="time" class="input" name="time" type="time" value="10:00:00" step="600" size="22" required/><br />
+							<input id="time" class="input" name="time" type="time" value="11:00:00" size="22" required/><br />
 						</div>
 					</div>
 
