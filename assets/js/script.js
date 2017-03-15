@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  // Navigation //
+  // ----------- TABLET AND MOBILE NAVIGATION --------------- //
 
   $( ".toggle-button" ).click(function() {
      $( ".nav" ).slideToggle(300)//duration of 300
@@ -9,12 +9,56 @@ $(document).ready(function() {
   $('.toggle-button').on('click', function() {
       this.classList.toggle('change');//changing nav style: from hamburger to x
   });
-           
-  // Back to Top Button //
+
+  // ----------- ACTIVITIES CLICK ------------ //
+
+  $('#br-box').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('#brazil').position().top}, 200);
+            return false;
+          }
+        );
+
+  $('#eg-box').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('#egypt').position().top}, 300);
+            return false;
+          }
+        );
+
+  $('#uk-box').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('#uk').position().top}, 400);
+            return false;
+          }
+        );
+
+  $('#it-box').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('#italy').position().top}, 500);
+            return false;
+          }
+        );
+
+  $('#jp-box').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('#japan').position().top}, 600);
+            return false;
+          }
+        );
+
+  $('#usa-box').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('#usa').position().top}, 700);
+            return false;
+          }
+        );
+
+  // ----------- BACK TO TOP ------------ //
 
   var topButton = $('.to-top');
 
-      //hide or show the "back to top" link
+      //Show to-top button when html reaches 450
       $(window).scroll(function(){
         if ($(this).scrollTop() > 450){
           topButton.fadeIn();
@@ -24,7 +68,7 @@ $(document).ready(function() {
         }
       });
 
-      //smooth scroll to top
+      //Scroll top function
       topButton.click(function(event){
         event.preventDefault();
         $('html,body').animate({ scrollTop: 0 }, 500);
@@ -33,7 +77,7 @@ $(document).ready(function() {
 
 });
 
-// Google Map //
+// ------------- GOOGLE MAP ------------ //
 function myMap() {
   var myLatLng = {lat: 36.04, lng: -115.25};
 
