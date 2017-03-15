@@ -545,7 +545,7 @@ h5{
 	@media only screen and (min-width: 501px) and (max-width: 1020px){
 		h5{
 			font-size: 53pt;
-			margin:30px 0 0 0;
+			margin:24px 0 0 0;
 		}
 
 		.intro{
@@ -568,7 +568,7 @@ h5{
 		}
 
 		.home-body p{
-			line-height: 25px;
+			line-height: 26px;
 		}
 
 		h5{
