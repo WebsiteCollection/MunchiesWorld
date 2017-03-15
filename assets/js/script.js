@@ -63,7 +63,7 @@ $(document).ready(function() {
         if ($(this).scrollTop() > 450){
           topButton.fadeIn();
         }
-        else {            
+        else {       
           topButton.fadeOut();
         }
       });
@@ -74,6 +74,18 @@ $(document).ready(function() {
         $('html,body').animate({ scrollTop: 0 }, 500);
         return false;
       }); 
+
+  var mascot = $('.mascot');
+
+      //Show to-top button when html reaches 450
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 650){
+          mascot.fadeIn();
+        }
+        else {       
+          mascot.fadeOut();
+        }
+      });
 
 });
 
