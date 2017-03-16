@@ -1130,6 +1130,7 @@ section ul{
 
 input#res_submit_button {
     margin-left: 38.5%;
+    -webkit-appearance: none;
 }
 
 #headline{
@@ -1244,7 +1245,11 @@ input#res_submit_button {
   	font-family: 'Lato', sans-serif;
 	font-size: 13pt;
 }
-	
+
+#submit_button{
+	-webkit-appearance: none;
+}
+
 	/* -----------------------------------
 	9-1 TABLET STYLES 
 	--------------------------------------*/
