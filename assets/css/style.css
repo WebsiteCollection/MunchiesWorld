@@ -181,7 +181,6 @@ main{
 		1-2 MOBILE STYLES 
 	--------------------------------------*/
 	@media only screen and (min-width: 50px) and (max-width: 500px){
-		
 		h1{
 			font-size: 26pt;
 		}
@@ -193,7 +192,7 @@ main{
 
 		.mascot{
 			width: 200px;
-			right: 40px;
+			right: 33px;
 		}
 
 	}
@@ -293,7 +292,6 @@ img.nav-logo{
 }
 
 @media screen and (min-width:1021px) {
-    
     .nav { 
        	display:block !important;
     }
@@ -302,7 +300,6 @@ img.nav-logo{
 	2-1 TABLET and MOBILE STYLES
 	-----------------------------*/
 	@media  only screen and (min-width: 50px) and (max-width: 1020px){
-	 	
 	 	img.nav-logo{
 	 		display: block;
 	 	}
@@ -314,7 +311,7 @@ img.nav-logo{
 	    .toggle-button {
 		    display: inline-block;
 		    cursor: pointer;
-		    margin: 97px 20px 10px 20px;
+		    margin: 75px 20px 10px 20px;
 
 		}
 
@@ -656,13 +653,16 @@ h5{
 	5-2 MOBILE STYLES 
 	--------------------------------------*/
 	@media only screen and (min-width: 50px) and (max-width: 500px){
-			
 		#act-box div p{
 			padding-top: 150px;
 		}
 
 		.to-top{
 			right: 10px;
+		}
+
+		.to-top img{
+			width: 30px;
 		}
 	}
 
@@ -984,11 +984,12 @@ section ul{
 	--------------------------------------*/
 	@media only screen and (min-width: 50px) and (max-width: 500px){
 		h6{
-			margin: 10px 20px;
+			font-size: 14pt;
+			margin: 10px 40px;
 		}
 
 		section ul{
-			padding-left: 20px;
+			padding-left: 40px;
 		}
 
 		#passport img, #passport p{
@@ -1004,7 +1005,7 @@ section ul{
 
 		.spe-box div p{
 			top:125px;
-			}
+		}
 	}
 /* -----------------------
     8. RESERVATION PAGE
@@ -1264,7 +1265,7 @@ input#res_submit_button {
 			max-width: 100%;
 		}
 		#message{
-			width: 300px;
+			width: 260px;
 		}
 	}
 
