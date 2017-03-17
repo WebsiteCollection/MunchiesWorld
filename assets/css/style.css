@@ -167,6 +167,7 @@ main{
 	z-index: 10;
 	display: none;
 }
+
 	/* -----------------------------------
 		1-1 TABLET STYLES 
 	--------------------------------------*/
@@ -717,8 +718,7 @@ h5{
 		/* -----------------------------------
 		5.1-1 TABLET AND MOBILE STYLES 
 		--------------------------------------*/
-		@media only screen and (min-width: 50px) and (max-width: 1020px){
-				
+		@media only screen and (min-width: 50px) and (max-width: 1020px){	
 			span{
 				opacity: 1;
 			}
@@ -727,6 +727,7 @@ h5{
 				opacity: 1;
 			}
 		}
+
 	/* --------------------
 	5.2 Description
 	----------------------*/
@@ -768,6 +769,7 @@ h5{
 	#uk{
 		background-color: #ffcd00;
 	}
+
 		/* -----------------------------------
 		5.2-1 TABLET STYLES 
 		--------------------------------------*/
@@ -951,6 +953,7 @@ section ul{
 #bowl{
 	background-image: url('../media/bowl.png');
 }
+
 	/* -----------------------------------
 	7-1 TABLET AND MOBILE STYLES 
 	--------------------------------------*/
@@ -1007,6 +1010,7 @@ section ul{
 			top:125px;
 		}
 	}
+
 /* -----------------------
     8. RESERVATION PAGE
 -------------------------*/
@@ -1021,6 +1025,7 @@ section ul{
 	display: inline-block;
 	margin-left: 5px;
 }
+
 .cld-main{
   	width: 100%;
 }
@@ -1138,6 +1143,13 @@ input#res_submit_button {
 	text-align: left;
 }
 
+#res-mascot{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
 	/* -----------------------------------
 	8-1 MOBILE STYLES 
 	--------------------------------------*/
@@ -1157,6 +1169,10 @@ input#res_submit_button {
 
 		#reservation h3{
 			font-size: 30pt;
+		}
+
+		#res-mascot{
+			width: 180px;
 		}
 
 	}
@@ -1257,6 +1273,7 @@ input#res_submit_button {
 		#contact-left{
 			max-width: 55%;
 		}
+
 		#message{
 			width: 370px;
 		}
@@ -1269,6 +1286,7 @@ input#res_submit_button {
 		#contact-left{
 			max-width: 100%;
 		}
+
 		#message{
 			width: 260px;
 		}
