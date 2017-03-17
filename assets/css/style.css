@@ -988,11 +988,13 @@ section ul{
 	@media only screen and (min-width: 50px) and (max-width: 500px){
 		h6{
 			font-size: 14pt;
-			margin: 10px 40px;
+			text-align: center;
 		}
 
 		section ul{
-			padding-left: 40px;
+			padding-left: 0px;
+			text-align:center;
+			margin: 10px 0 40px 0;
 		}
 
 		#passport img, #passport p{
